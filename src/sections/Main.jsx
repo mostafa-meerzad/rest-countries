@@ -4,8 +4,10 @@ import { useCountries } from "../hooks/useCountries";
 const Main = () => {
   const { countries, isLoading, error } = useCountries();
   return (
-    <main className=" p-8 grid gap-8  mt-8 md:grid-flow-row md:grid-cols-2 
-     ">
+    <main
+      className=" p-8 grid gap-8  mt-8 md:grid-flow-row md:grid-cols-2 xl:grid-cols-4 xl:px-12
+     "
+    >
       {countries.map(
         ({
           name: { official },
