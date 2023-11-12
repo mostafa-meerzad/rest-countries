@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         Nunito: ["Nunito Sans", "sans-serif"],
       },
+      transitionTimingFunction:{
+        'custom': 'cubic-bezier(0.46, 0.3, 0.36, 0.68)',
+        
+      }
     },
   },
   plugins: [],
