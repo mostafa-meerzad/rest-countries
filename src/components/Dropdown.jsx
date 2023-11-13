@@ -14,7 +14,7 @@ const Dropdown = ({ setFilter }) => {
     >
       filter by region
       <Angle
-        className={`w-4 fill-veryDarkBlue dark:fill-white`}
+        className={`w-3 fill-veryDarkBlue dark:fill-white`}
         initial={{ rotate: "0" }}
         animate={isDropdownOpen ? { rotate: 180 } : { rotate: 0 }}
         transition={{ duration: 0.5 }}

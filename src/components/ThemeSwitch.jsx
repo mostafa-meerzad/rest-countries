@@ -8,11 +8,11 @@ const ThemeSwitch = () => {
     <button onClick={toggleTheme} className="flex gap-3 capitalize font-semibold ">
       {theme === "dark" ? (
         <>
-          <Moon /> dark mode
+          <Moon className=" scale-40  "/> dark mode
         </>
       ) : (
         <>
-          <Sun /> light mode
+          <Sun className=" scale-40  "/> light mode
         </>
       )}
     </button>

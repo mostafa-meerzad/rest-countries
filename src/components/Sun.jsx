@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"
 
-const Sun = () => {
+const Sun = ({...args}) => {
   return (
     
-    <motion.svg initial={{rotate:-45, scale:.8}} animate={{rotate:0, scale:1}} xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+    <motion.svg initial={{rotate:-45, scale:.6}} animate={{rotate:0, scale:.8}} xmlns="http://www.w3.org/2000/svg" width="26" height="26" {...args}>
       <path
         fill="#000"
         fillRule="evenodd"

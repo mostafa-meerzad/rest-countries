@@ -13,11 +13,14 @@ const Country = ({ imgUrl, name, population, region, capital }) => {
         src={imgUrl}
         alt={name}
         loading="lazy"
-        className="w-full h-40 object-cover"
+        className="w-full h-56 object-contain"
       />
       <div className="p-4">
         <h2 className="font-bold text-lg my-4">{name}</h2>
-        <CountryField name="population" data={population} />
+        <CountryField
+          name="population"
+          data={Number(population).toLocaleString()}
+        />
         <CountryField name="region" data={region} />
         <CountryField name="capital" data={capital} />
       </div>

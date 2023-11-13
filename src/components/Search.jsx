@@ -25,9 +25,9 @@ const Search = ({ setSearch }) => {
       <button
         onClick={handleClick}
         className="py-4 px-6 pr-4  
-        hover:bg-slate-200 peer-focus:dark:bg-veryDarkBlue peer-focus:bg-slate-200 dark:peer-focus:bg-veryDarkBlue "
+        hover:bg-slate-200 peer-focus:dark:bg-veryDarkBlue peer-focus:bg-slate-200 dark:peer-focus:bg-veryDarkBlue group "
       >
-        <Magnifier className={"w-3 fill-darkGray dark:fill-veryLightGray"} />
+        <Magnifier className={"w-3 fill-darkGray dark:fill-veryLightGray group-hover:fill-veryDarkBlueDarker"} />
       </button>
     </label>
   );
