@@ -16,7 +16,7 @@ const Search = ({ setSearch }) => {
         type="text"
         id="input"
         placeholder="Search for a country"
-        className=" w-52 text-sm text-veryDarkBlue dark:text-veryLightGray bg-veryLightGray dark:bg-darkBlue  focus:outline-none peer"
+        className=" w-full md:w-52 text-sm text-veryDarkBlue dark:text-veryLightGray bg-veryLightGray dark:bg-darkBlue  focus:outline-none peer"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && setSearch(input)}
@@ -25,7 +25,7 @@ const Search = ({ setSearch }) => {
       <button
         onClick={handleClick}
         className="py-4 px-6 pr-4  
-        hover:bg-slate-200 dark:bg-veryDarkBlue peer-focus:bg-slate-200 dark:peer-focus:bg-veryDarkBlue "
+        hover:bg-slate-200 peer-focus:dark:bg-veryDarkBlue peer-focus:bg-slate-200 dark:peer-focus:bg-veryDarkBlue "
       >
         <Magnifier className={"w-3 fill-darkGray dark:fill-veryLightGray"} />
       </button>

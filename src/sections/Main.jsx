@@ -4,12 +4,12 @@ import Dropdown from "../components/Dropdown";
 import Search from "../components/Search";
 
 const Main = () => {
-  const { countries, isLoading, error } = useCountries();
+  const { countries, isLoading, error, filterCountries, searchCountry } = useCountries();
   return (
     <main className="max-w-screen-2xl mx-auto">
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 w-full px-4 md:px-8 xl:px-12  my-10 ">
-        <Search />
-        <Dropdown />
+        <Search setSearch={searchCountry} />
+        <Dropdown setFilter={filterCountries}/>
       </header>
       <div className=" px-4 md:px-8 xl:px-12  grid gap-8 md:grid-flow-row md:grid-cols-2 xl:grid-cols-4">
         {countries.map(

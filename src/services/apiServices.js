@@ -12,9 +12,9 @@ export const getAllCountries = async () => {
   }
 };
 
-export const getCountry = (name) => {
+export const getCountry = async (name) => {
   try {
-    const response = axios.get(`${BASE_URL}/name/${name}`);
+    const response = await axios.get(`${BASE_URL}/name/${name}`);
     return response.data;
   } catch (error) {
     console.log("something went wrong getting a country");
