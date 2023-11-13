@@ -9,7 +9,8 @@ const Search = ({ setSearch }) => {
   return (
     <label
       htmlFor="input"
-      className="flex justify-between items-center flex-row-reverse gap-2 pr-5 rounded-sm bg-veryLightGray dark:dark:bg-darkBlue shadow-md  dark:shadow-veryDarkBlue focus-within:outline focus-within:outline-veryDarkBlue dark:focus-within:outline-veryLightGray overflow-hidden"
+      className="flex justify-end items-center flex-row-reverse gap-2 pr-5 w-full md:w-auto rounded-sm bg-veryLightGray dark:dark:bg-darkBlue shadow-md  dark:shadow-veryDarkBlue focus-within:outline 
+      outline-1 focus-within:outline-veryDarkBlue dark:focus-within:outline-veryLightGray overflow-hidden"
     >
       <input
         type="text"

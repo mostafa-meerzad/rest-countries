@@ -7,7 +7,7 @@ const Main = () => {
   const { countries, isLoading, error } = useCountries();
   return (
     <main className="max-w-screen-2xl mx-auto">
-      <header className="flex justify-between items-center w-full px-4 md:px-8 xl:px-12  my-10 ">
+      <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 w-full px-4 md:px-8 xl:px-12  my-10 ">
         <Search />
         <Dropdown />
       </header>
