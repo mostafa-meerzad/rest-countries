@@ -34,6 +34,10 @@ export const useCountries = () => {
   };
 
   const searchCountry = async (name) => {
+    // do nothing if there is no name provided
+    if (!name) return;
+    // reset the error if the user calls again after an error occurred
+    setError("");
     setIsLoading(true);
     try {
       const data = await getCountry(name);
