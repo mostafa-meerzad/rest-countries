@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <main className="max-w-screen-2xl mx-auto">
       <header className="flex justify-between items-center w-full px-4 md:px-8 xl:px-12  my-10 ">
-        <Search/>
-        <Dropdown  />
+        <Search />
+        <Dropdown />
       </header>
       <div className=" px-4 md:px-8 xl:px-12  grid gap-8 md:grid-flow-row md:grid-cols-2 xl:grid-cols-4">
         {countries.map(
@@ -18,7 +18,7 @@ const Main = () => {
             region,
             capital: [capital] = "unknown",
             population,
-            flags: {svg: flagUrl },
+            flags: { svg: flagUrl },
           }) => {
             return (
               <Country
