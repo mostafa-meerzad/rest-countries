@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Magnifier from "./Magnifier";
+import Magnifier from "./icon-components/Magnifier";
 
 const Search = ({ setSearch }) => {
   const [input, setInput] = useState("");

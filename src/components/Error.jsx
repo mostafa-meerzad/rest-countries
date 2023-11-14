@@ -1,4 +1,4 @@
-import EmptyFolder from "./EmptyFolder"
+import EmptyFolder from "./icon-components/EmptyFolder"
 
 const Error = () => {
   return (

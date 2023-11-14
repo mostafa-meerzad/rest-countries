@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Angle from "./Angle";
+import Angle from "./icon-components/Angle";
 import { motion } from "framer-motion";
 
 // filter values
