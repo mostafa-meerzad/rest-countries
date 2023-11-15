@@ -1,4 +1,5 @@
 import CountryDataField from "./CountryDataField";
+import {motion} from "framer-motion";
 
 const Country = ({
   imgUrl,
@@ -41,9 +42,11 @@ const Country = ({
     });
   };
   return (
-    <div
+    <motion.div
       className="w-full flex flex-col pb-4 overflow-hidden border rounded-md shadow-lg font-Nunito md:pb-0 max-w-md max-md:mx-auto  dark:border-veryDarkBlueDarker dark:text-veryLightGray dark:bg-darkBlue cursor-pointer"
       onClick={handleClick}
+      initial={{scale:1}}
+      whileHover={{scale:1.05}}
     >
       <img
         src={imgUrl}
@@ -60,7 +63,7 @@ const Country = ({
         <CountryDataField name="region" data={region} />
         <CountryDataField name="capital" data={capital} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Country;

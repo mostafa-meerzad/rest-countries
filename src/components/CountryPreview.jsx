@@ -1,5 +1,6 @@
 import Arrow from "./icon-components/Arrow";
 import CountryDataField from "./CountryDataField";
+import { motion } from "framer-motion";
 
 const CountryPreview = ({
   imgUrl,
@@ -17,12 +18,14 @@ const CountryPreview = ({
 }) => {
   // couldn't think any better way of showing this much different data, but to construct the preview component fields manually
   return (
-    <div
+    <motion.div
       className="grid  w-full max-lg:max-w-lg mx-auto sticky  top-0 left-0 px-6 bg-veryLightGray dark:bg-veryDarkBlueDarker text-veryDarkBlue dark:text-veryLightGray lg:px-12 py-8 z-10 
       lg:gap-x-12  lg:py-12"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <button
-        className="flex items-center justify-center gap-2 px-4 py-0.5 w-24 rounded-sm bg-veryLightGray dark:bg-darkBlue dark:text-veryLightGray shadow-md lg:row-start-1 lg:row-end-2 lg:mb-16
+        className="flex items-center justify-center gap-2 px-4 py-0.5 w-24 rounded-sm bg-veryLightGray dark:bg-darkBlue hover:bg-veryLightGray hover:outline outline-1 outline-gray-400 dark:hover:bg-veryDarkBlueDarker dark:text-veryLightGray shadow-md lg:row-start-1 lg:row-end-2 lg:mb-16
          "
         onClick={handleCountryReset}
       >
@@ -33,7 +36,7 @@ const CountryPreview = ({
       <img
         src={imgUrl}
         alt=""
-        className=" object-cover w-full h-52 my-8  shadow-md lg:h-72 lg:my-0 lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-end-5 "
+        className=" max-lg:object-cover w-full h-52 my-8  shadow-md lg:h-72 lg:max-w-xl lg:my-0 lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-end-5 "
       />
 
       <h2 className="font-bold capitalize text-xl lg:col-start-3 lg:col-span-2 lg:row-start-2">
@@ -99,7 +102,7 @@ const CountryPreview = ({
           })}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default CountryPreview;
