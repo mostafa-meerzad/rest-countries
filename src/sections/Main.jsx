@@ -10,7 +10,7 @@ import Loading from "../components/Loading";
 const Main = () => {
   const { countries, isLoading, error, filterCountries, searchCountry } =
     useCountries();
-// store country info for country-preview if selects a country to preview
+  // store country info for country-preview if selects a country to preview
   const [country, setCountry] = useState(null);
 
   const resetCountryPreview = () => {
@@ -21,7 +21,7 @@ const Main = () => {
     <main className="max-w-screen-2xl mx-auto relative ">
       {/* loading component */}
       <Loading isLoading={isLoading} />
-  
+
       {/* preview a country */}
       {country && (
         <CountryPreview handleCountryReset={resetCountryPreview} {...country} />
@@ -36,7 +36,7 @@ const Main = () => {
         <Dropdown setFilter={filterCountries} />
       </header>
       <div
-        className={` px-4 md:px-8 xl:px-12  grid gap-8 md:grid-flow-row md:grid-cols-2 xl:grid-cols-4 ${
+        className={` px-4 md:px-8 xl:px-12  grid justify-center gap-8 md:grid-flow-row md:grid-cols-2 xl:grid-cols-4 ${
           country && "hidden "
         }`}
       >

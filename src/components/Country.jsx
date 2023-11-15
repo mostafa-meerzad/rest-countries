@@ -42,14 +42,14 @@ const Country = ({
   };
   return (
     <div
-      className="w-full flex flex-col pb-4 overflow-hidden border rounded-md shadow-lg font-Nunito md:pb-0 dark:border-veryDarkBlueDarker dark:text-veryLightGray dark:bg-darkBlue cursor-pointer"
+      className="w-full flex flex-col pb-4 overflow-hidden border rounded-md shadow-lg font-Nunito md:pb-0 max-w-md max-md:mx-auto  dark:border-veryDarkBlueDarker dark:text-veryLightGray dark:bg-darkBlue cursor-pointer"
       onClick={handleClick}
     >
       <img
         src={imgUrl}
         alt={name}
         loading="lazy"
-        className="w-full h-40 object-contain"
+        className=" max-h-48 max-w-md object-cover shadow-sm lg:h-60 "
       />
       <div className="p-4">
         <h2 className="font-bold text-lg my-4">{name}</h2>
