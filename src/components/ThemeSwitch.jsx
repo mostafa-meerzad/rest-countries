@@ -1,6 +1,6 @@
 import { useTheme } from "../hooks/useTheme";
-import Moon from "./Moon";
-import Sun from "./Sun";
+import Moon from "./icon-components/Moon";
+import Sun from "./icon-components/Sun";
 
 const ThemeSwitch = () => {
   const { theme, toggleTheme } = useTheme();
